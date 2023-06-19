@@ -1,4 +1,4 @@
-from __init__ import *
+from web import *
 from flask_frozen import Freezer
 frezer = Freezer(app)
 if __name__ == '__main__':
