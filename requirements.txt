@@ -1,0 +1,9 @@
+MarkupSafe
+colorama
+Werkzeug
+Jinja2
+itsdangerous
+click
+Flask
+frozen_flask
+gunicorn

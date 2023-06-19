@@ -1,0 +1,356 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  #video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #video-container .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .sun {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+  }
+
+  .dark {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+  .dark header {
+    background-color: #333333;
+    color: #ffffff;
+  }    
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .dark footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .box {
+      border: 1px solid black;
+      padding: 10px;
+  }
+
+  .dark .box {
+      border: 1px solid white;
+      padding: 10px;
+  }
+
+  .home_page_button {
+    background-color:transparent;
+    border-radius:28px;
+    border:1px solid #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:28px;
+    padding:16px 31px;
+    text-decoration:none;
+  }
+
+  .dark .us_container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .us_container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .message-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 auto;
+  }
+
+  .message-box label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .message-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .message-box input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .dark .message-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 4px;
+    margin: 0 auto;
+  }
+
+  .dark .message-box label {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .dark .message-box textarea,
+  .dark .message-box input[type="text"],
+  .dark .message-box input[type="email"],
+  .dark .message-box input[type="submit"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #555;
+    color: #fff;
+  }
+
+  .dark .message-box input[type="submit"] {
+    background-color: #4CAF50;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .dark .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: green;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.dark .tick {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    stroke: white;
+}
+
+.dark .message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: green;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.tick {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  stroke: black;
+}
+
+.message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.dark .calculator {
+  background-color: #1f2937;
+  color: #fff;
+  border: 2px solid #4b5563;
+  padding: 20px;
+  position: relative;
+}
+
+.dark .calculator h2 {
+  color: #fff;
+}
+
+.dark .calculator p {
+  color: #d1d5db;
+}
+
+.dark .calculator input {
+  background-color: #4b5563;
+  color: #d1d5db;
+}
+
+.dark .calculator input:focus {
+  outline-color: #9ca3af;
+}
+
+.dark .calculator button {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.dark .calculator button:hover {
+  background-color: #1d4ed8;
+}
+
+.calculator {
+  background-color: #fff;
+  color: #111827;
+  border: 2px solid #d1d5db;
+  padding: 20px;
+  position: relative;
+}
+
+.calculator h2 {
+  color: #111827;
+}
+
+.calculator p {
+  color: #6b7280;
+}
+
+.calculator input {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.calculator input:focus {
+  outline-color: #2563eb;
+}
+
+.calculator button {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.calculator button:hover {
+  background-color: #1d4ed8;
+}
+
+.info {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.popup {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: none;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}
+
+.popup p {
+  color: #111827
+}
+
+.info:hover + .popup {
+  display: block;
+}
+
+.dark .info {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.dark .popup {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  display: none;
+  background-color: #1f2937;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+}
+
+.dark .popup p {
+  color: #d1d5db;
+}
+
+.form {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: large;
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invest Your Bitcoins, Earn Upto 500%!</title>
+  <!-- Use this line to include the tailwind CSS file from CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Use this line to include the fontawesome CDN -->
+  <script src="https://kit.fontawesome.com/c6c67d2b36.js"></script>
+  <link rel="icon" type="image/x-icon" href="https://cryptologos.cc/logos/bitcoin-btc-logo.png">
+  <link rel="stylesheet" type="text/css" href="{{url_for('.static', filename='styles.css')}}">
+  <script src="{{url_for('.static', filename='script.js')}}"></script>
+</head>
+<body class="bg-gray-50">
+  <!-- Create the header section -->
+  <header class="sticky top-0 z-50 bg-white shadow">
+    <nav class="container flex justify-between items-center mx-auto py-4">
+      <!-- Logo -->
+      <div>
+        <a href="/"><img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png" class="h-14 w-14" alt="bitcoin-icon"></a>
+      </div>
+      <!-- Navigation links -->
+      <ul class="flex items-center">
+        <li class="mr-6"><a href="/plans" class="{%block box1%} {%endblock box1%} ">Plans</a></li>
+        <li class="mr-6"><a href="/support" class="{%block box3%} {%endblock box3%} ">Support</a></li>
+        <li class="mr-6"><a href="/about_us" class="{%block box4%} {%endblock box4%} ">About Us</a></li>
+      </ul>
+      <!-- Theme switcher button -->
+      <button id="themeSwitcher">
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+      </button>
+      <!--Invest Now link-->
+      <div class="flex items-center text-sm font-medium text-gray-500">
+        <a href="https://bit.ly/42zoJOU" class="px-4 py-2 mr-2 border-2 border-blue-500 rounded-full hover:bg-blue-500 hover:text-white">Invest Now!</a>
+      </div>
+    </nav>
+  </header>
+  {%block body%}
+  {%endblock body%}
+  <footer>
+    <h6>
+      <a href="mailto:shahharshit063@gmail.com">Contact Us</a>
+    </h6>
+    <h6>&copy; 2015 - 2023 InvestBTC. All rights reserved.</h6>
+  </footer>
+</body>
+</html>
