@@ -1,2 +1,2 @@
-from web import *
-application = app.wsgifunc()
+sys.path.append('/home/investbitcoins/investbitcoins.github.io')
+from web import app as application
