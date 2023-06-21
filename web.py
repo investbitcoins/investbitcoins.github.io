@@ -44,6 +44,3 @@ def submit_request():
     to_copy = email
     sendEmail(to_copy, subject, content)
     return render_template('submitted.html')
-
-if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0')
